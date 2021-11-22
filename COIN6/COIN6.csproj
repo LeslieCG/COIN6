@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01532099-4EFF-4C27-BAA2-52F642B75199}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>COIN6</RootNamespace>
+    <AssemblyName>COIN6</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Botones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CantidadCajasEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CantidadCajasEntrada.designer.cs">
+      <DependentUpon>CantidadCajasEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CantidadKgEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CantidadKgEntrada.designer.cs">
+      <DependentUpon>CantidadKgEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CantidadSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CantidadSalida.designer.cs">
+      <DependentUpon>CantidadSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionSQL.cs" />
+    <Compile Include="Confirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmacion.Designer.cs">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEmpleado.Designer.cs">
+      <DependentUpon>ConsultarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostoEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostoEntrada.designer.cs">
+      <DependentUpon>CostoEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEmpleado.designer.cs">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graficas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficas.Designer.cs">
+      <DependentUpon>Graficas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformeEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeEntrada.designer.cs">
+      <DependentUpon>InformeEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformeSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeSalida.designer.cs">
+      <DependentUpon>InformeSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniEntradas.designer.cs">
+      <DependentUpon>IniEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniRegistro.designer.cs">
+      <DependentUpon>IniRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniReportes.designer.cs">
+      <DependentUpon>IniReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniSalidas.designer.cs">
+      <DependentUpon>IniSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleados.Designer.cs">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProductosE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProductosE.Designer.cs">
+      <DependentUpon>MenuProductosE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProductosS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProductosS.Designer.cs">
+      <DependentUpon>MenuProductosS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReportes.designer.cs">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEmpleado.designer.cs">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarEmpleado.designer.cs">
+      <DependentUpon>RegistrarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteEntradas.Designer.cs">
+      <DependentUpon>ReporteEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket.Designer.cs">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CantidadCajasEntrada.resx">
+      <DependentUpon>CantidadCajasEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CantidadKgEntrada.resx">
+      <DependentUpon>CantidadKgEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CantidadSalida.resx">
+      <DependentUpon>CantidadSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmacion.resx">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEmpleado.resx">
+      <DependentUpon>ConsultarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostoEntrada.resx">
+      <DependentUpon>CostoEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEmpleado.resx">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficas.resx">
+      <DependentUpon>Graficas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeEntrada.resx">
+      <DependentUpon>InformeEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeSalida.resx">
+      <DependentUpon>InformeSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniEntradas.resx">
+      <DependentUpon>IniEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniRegistro.resx">
+      <DependentUpon>IniRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniReportes.resx">
+      <DependentUpon>IniReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniSalidas.resx">
+      <DependentUpon>IniSalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleados.resx">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProductosE.resx">
+      <DependentUpon>MenuProductosE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProductosS.resx">
+      <DependentUpon>MenuProductosS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReportes.resx">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEmpleado.resx">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrarEmpleado.resx">
+      <DependentUpon>RegistrarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEntradas.resx">
+      <DependentUpon>ReporteEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COIN6.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgGrafica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CebollaBlanca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CebollaMorada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CebollaMorada1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomate1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TomateM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jitomate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Serrano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jalapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poblano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zanahoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calabaza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chayote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimonCS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimonSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PapaT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ejote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicharo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CebollaAmericana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aguacate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Romeritos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jengibre.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
